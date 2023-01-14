@@ -1,0 +1,33 @@
+.services-list {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        position: relative;
+        gap: 30px;
+    }
+
+    &__title-panel {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+
+        width: 370px;
+        height: 70px;
+
+        color: var(--primary-page-color);
+        background-color: var(--services-title-background);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin-top: 27px;
+        margin-bottom: 27px;
+    }
+}
+

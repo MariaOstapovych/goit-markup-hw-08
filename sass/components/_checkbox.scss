@@ -1,0 +1,39 @@
+.checkbox {
+        display: flex;
+
+        &__input {
+            appearance: none;
+        }
+    
+        &__icon {
+            position: absolute;
+            margin: 2px 8px 0 0;
+            fill: transparent;
+            border-radius: 2px;
+            border: 2px solid var(--title-text-color);
+
+            .checkbox__input:checked+& {
+                fill: var(--primary-page-color);
+                background-color: var(--accent-text-color);
+                border-color: var(--accent-text-color);
+            }
+        }
+    
+        &__label {
+            position: relative;
+            padding-left: 24px;
+    
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: 0.03em;
+    
+            cursor: pointer;
+        }
+    
+        &__agreement {
+            color: var(--accent-text-color);
+            text-decoration: underline;
+        }
+    }
+

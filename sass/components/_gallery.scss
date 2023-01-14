@@ -1,0 +1,32 @@
+.gallery-list {
+
+    @media (min-width:768px) {
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media (min-width:1200px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__item {
+        margin-bottom: 30px;
+    
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (min-width:768px) {
+            flex-basis: calc((100% - 30px) / 2);
+            margin-bottom: 0;
+        }
+
+        @media (min-width:1200px) {
+            flex-basis: calc((100% - 60px) / 3);
+        }
+    }
+   
+}
