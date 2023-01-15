@@ -14,20 +14,19 @@
 
         width: 370px;
         height: 70px;
-
-        color: var(--primary-page-color);
         background-color: var(--services-title-background);
+    }
+
+    &__title {
+        margin-top: 27px;
+        margin-bottom: 27px;
+        color: var(--primary-page-color);
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         text-align: center;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-    }
-
-    &__title {
-        margin-top: 27px;
-        margin-bottom: 27px;
     }
 }
 
