@@ -9,7 +9,11 @@
     overflow-y: auto;
 
     &__container {
-        padding:48px 0 48px 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 48px 0 48px 0;
     }
 
     &__close {
@@ -26,7 +30,10 @@
     }
 
     &__navigation {
-        margin-bottom: 227px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin-bottom: 60px;
         font-weight: 500;
         font-size: 40px;
         line-height: 1.17;
@@ -42,6 +49,13 @@
         color: var(--accent-text-color);
     }
 
+
+
+    &__control-container{
+        display: flex;
+        flex-direction: column;
+    }
+
     &__tel {
         display: block;
         margin-bottom: 32px;
@@ -51,9 +65,8 @@
         letter-spacing: 0.02em;
         color: var(--accent-text-color);
 
-        @media (min-width:328px) {
-            font-size: 34px;
-        }
+
+    
 
     }
 
@@ -71,13 +84,14 @@
     &__social-media {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         font-weight: 500;
         font-size: 12px;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        color: var(--accent-text-color);
-
-        @media (min-width:389px) {
+        color: var(--accent-text-color);  
+        
+        @media (min-width:480px){
             font-size: 18px;
         }    
     }
@@ -94,6 +108,8 @@
         &:last-child {
             border: none;
         }
+
+        
     }
 }
 
