@@ -1537,6 +1537,11 @@ a {
   letter-spacing: 0.02em;
   color: var(--accent-text-color);
 }
+@media (min-width: 480px) {
+  .mobile-menu__tel {
+    font-size: 34px;
+  }
+}
 .mobile-menu__email {
   display: block;
   margin-bottom: 64px;
